@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nabil Stock Dealer - Your trusted partner for stock trading and investment services in Nepal">
+    <title>Nabil Stock Dealer | Nepal's Premier Stock Trading Partner</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <!-- Top Bar: Logo and Actions -->
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-inner">
+                    <a href="#" class="logo">
+                        <img src="https://www.nabilstockdealer.com.np/wp-content/uploads/2023/08/nabil-stock-dealer-logo-77.gif" alt="Nabil Stock Dealer" class="logo-img">
+                    </a>
+                    
+                    <div class="header-actions">
+                        <a href="https://nepalstock.com.np" target="_blank" class="btn btn-nepse">
+                            <span class="nepse-dot"></span>
+                            NEPSE Live
+                        </a>
+                        <a href="#" class="btn btn-primary">Open Account</a>
+                    </div>
+
+                    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Navigation Bar -->
+        <div class="header-nav" id="headerNav">
+            <div class="container">
+                <nav class="nav">
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="#home" class="nav-link active">Home</a></li>
+                        
+                        <!-- About Dropdown -->
+                        <li class="nav-dropdown">
+                            <a href="#about" class="nav-link">
+                                About
+                                <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                                    <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#about">Company Profile</a></li>
+                                <li><a href="#">Mission & Vision</a></li>
+                                <li><a href="#">Core Values</a></li>
+                                <li><a href="#">Board of Directors</a></li>
+                                <li><a href="#">Management Team</a></li>
+                            </ul>
+                        </li>
+                        
+                        <!-- Services Dropdown -->
+                        <li class="nav-dropdown">
+                            <a href="#services" class="nav-link">
+                                Services
+                                <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                                    <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Stock Dealer</a></li>
+                                <li><a href="#">Brokerage Services</a></li>
+                                <li><a href="#">Underwriting Services</a></li>
+                                <li><a href="#">Portfolio Management (PMS)</a></li>
+                                <li><a href="#">Margin Lending</a></li>
+                                <li><a href="#">QII</a></li>
+                                <li><a href="#">Depository Participant</a></li>
+                            </ul>
+                        </li>
+                        
+                        <!-- Resources Dropdown -->
+                        <li class="nav-dropdown">
+                            <a href="#" class="nav-link">
+                                Resources
+                                <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                                    <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Financial Highlights</a></li>
+                                <li><a href="#">Downloads</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Notices</a></li>
+                                <li><a href="#">Press Release</a></li>
+                                <li><a href="#">Video Tutorials</a></li>
+                                <li><a href="#">Calendar 2082</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                        
+                        <!-- Separator -->
+                        <li class="nav-separator"></li>
+                        
+                        <li><a href="#" class="nav-link">Demat Search</a></li>
+                        
+                        <!-- Account Services Dropdown -->
+                        <li class="nav-dropdown">
+                            <a href="#" class="nav-link">
+                                Account Services
+                                <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                                    <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Open TMS Account</a></li>
+                                <li><a href="#">Login TMS Account</a></li>
+                                <li><a href="#">CKYC for Demat</a></li>
+                                <li><a href="#">NSDL Trade Tracker</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-pattern"></div>
+            <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1920&q=80" alt="" class="hero-bg-image" aria-hidden="true">
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="hero-badge animate-fade-in">
+                        <span class="badge-dot"></span>
+                        SEBON Licensed Stock Dealer
+                    </span>
+                    <h1 class="hero-title animate-slide-up">
+                        Invest in Nepal's
+                        <span class="text-gradient">Future Growth</span>
+                    </h1>
+                    <p class="hero-description animate-slide-up delay-1">
+                        Your trusted partner for seamless stock trading. Experience professional brokerage services with real-time market access and expert guidance.
+                    </p>
+                    <div class="hero-cta animate-slide-up delay-2">
+                        <a href="#" class="btn btn-primary btn-lg">
+                            Start Trading
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <a href="#services" class="btn btn-ghost btn-lg">
+                            Explore Services
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual animate-fade-in delay-2">
+                    <div class="hero-visual-image">
+                        <img src="https://images.unsplash.com/photo-1642790106117-e829e14a795f?auto=format&fit=crop&w=600&q=80" alt="Stock market trading dashboard">
+                    </div>
+                    <div class="hero-card">
+                        <div class="card-header">
+                            <span class="card-label">NEPSE Index</span>
+                            <span class="card-trend positive">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M23 6l-9.5 9.5-5-5L1 18"/>
+                                </svg>
+                                +2.34%
+                            </span>
+                        </div>
+                        <div class="card-value">2,458.67</div>
+                        <div class="card-chart">
+                            <svg viewBox="0 0 300 80" class="chart-line">
+                                <path d="M0,60 Q30,55 60,45 T120,50 T180,30 T240,35 T300,15" fill="none" stroke="url(#chartGradient)" stroke-width="3"/>
+                                <defs>
+                                    <linearGradient id="chartGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" style="stop-color:#03A051"/>
+                                        <stop offset="100%" style="stop-color:#33be7d"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="card-footer">
+                            <span>Last updated: Today, 3:00 PM</span>
+                        </div>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">15K+</span>
+                            <span class="stat-label">Active Clients</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">₹50B+</span>
+                            <span class="stat-label">Trading Volume</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">24/7</span>
+                            <span class="stat-label">Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee Section -->
+    <section class="marquee-section">
+        <div class="marquee">
+            <div class="marquee-content">
+                <span class="marquee-item">NABIL: 1,245.00 <span class="positive">+12.50</span></span>
+                <span class="marquee-item">NICA: 892.00 <span class="negative">-5.20</span></span>
+                <span class="marquee-item">NTC: 1,580.00 <span class="positive">+28.00</span></span>
+                <span class="marquee-item">SHIVM: 456.00 <span class="positive">+8.40</span></span>
+                <span class="marquee-item">HIDCL: 312.00 <span class="negative">-2.10</span></span>
+                <span class="marquee-item">NLIC: 1,890.00 <span class="positive">+45.00</span></span>
+                <span class="marquee-item">GBIME: 425.00 <span class="positive">+6.80</span></span>
+                <span class="marquee-item">NMB: 512.00 <span class="negative">-3.50</span></span>
+            </div>
+            <div class="marquee-content" aria-hidden="true">
+                <span class="marquee-item">NABIL: 1,245.00 <span class="positive">+12.50</span></span>
+                <span class="marquee-item">NICA: 892.00 <span class="negative">-5.20</span></span>
+                <span class="marquee-item">NTC: 1,580.00 <span class="positive">+28.00</span></span>
+                <span class="marquee-item">SHIVM: 456.00 <span class="positive">+8.40</span></span>
+                <span class="marquee-item">HIDCL: 312.00 <span class="negative">-2.10</span></span>
+                <span class="marquee-item">NLIC: 1,890.00 <span class="positive">+45.00</span></span>
+                <span class="marquee-item">GBIME: 425.00 <span class="positive">+6.80</span></span>
+                <span class="marquee-item">NMB: 512.00 <span class="negative">-3.50</span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label animate-on-scroll">What We Offer</span>
+                <h2 class="section-title animate-on-scroll">Comprehensive Trading Services</h2>
+                <p class="section-description animate-on-scroll">
+                    From account opening to portfolio management, we provide end-to-end solutions for your investment journey.
+                </p>
+            </div>
+            <div class="services-grid">
+                <article class="service-card animate-on-scroll">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=400&q=80" alt="Stock Trading">
+                    </div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="8" y="8" width="32" height="32" rx="4"/>
+                            <path d="M16 28l6-6 4 4 8-8"/>
+                            <circle cx="34" cy="18" r="2" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Stock Trading</h3>
+                    <p class="service-description">
+                        Execute buy and sell orders seamlessly through our advanced trading platform with real-time market data.
+                    </p>
+                    <a href="#" class="service-link">
+                        Learn more
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </article>
+
+                <article class="service-card animate-on-scroll">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=400&q=80" alt="IPO Services">
+                    </div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="24" cy="24" r="16"/>
+                            <path d="M24 16v8l6 4"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">IPO Services</h3>
+                    <p class="service-description">
+                        Get priority access to Initial Public Offerings with our streamlined application process.
+                    </p>
+                    <a href="#" class="service-link">
+                        Learn more
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </article>
+
+                <article class="service-card animate-on-scroll">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=400&q=80" alt="Demat Account">
+                    </div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M8 40V20l16-12 16 12v20"/>
+                            <rect x="18" y="28" width="12" height="12"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Demat Account</h3>
+                    <p class="service-description">
+                        Open and manage your dematerialized account for secure electronic holding of securities.
+                    </p>
+                    <a href="#" class="service-link">
+                        Learn more
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </article>
+
+                <article class="service-card animate-on-scroll">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400&q=80" alt="Portfolio Advisory">
+                    </div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="24" cy="20" r="8"/>
+                            <path d="M12 40c0-6.627 5.373-12 12-12s12 5.373 12 12"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Portfolio Advisory</h3>
+                    <p class="service-description">
+                        Receive expert guidance on building and managing a diversified investment portfolio.
+                    </p>
+                    <a href="#" class="service-link">
+                        Learn more
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </article>
+
+                <article class="service-card animate-on-scroll">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?auto=format&fit=crop&w=400&q=80" alt="Margin Trading">
+                    </div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="6" y="10" width="36" height="28" rx="2"/>
+                            <path d="M6 18h36"/>
+                            <path d="M14 26h8"/>
+                            <path d="M14 32h12"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Margin Trading</h3>
+                    <p class="service-description">
+                        Leverage your investments with our margin trading facility for enhanced trading opportunities.
+                    </p>
+                    <a href="#" class="service-link">
+                        Learn more
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </article>
+
+                <article class="service-card animate-on-scroll">
+                    <div class="service-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=400&q=80" alt="Research & Analysis">
+                    </div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M24 4l6 12 14 2-10 10 2 14-12-6-12 6 2-14-10-10 14-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Research & Analysis</h3>
+                    <p class="service-description">
+                        Access in-depth market research, company analysis, and investment insights from our experts.
+                    </p>
+                    <a href="#" class="service-link">
+                        Learn more
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Data Section -->
+    <section class="market" id="market">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label animate-on-scroll">Live Updates</span>
+                <h2 class="section-title animate-on-scroll">Market Overview</h2>
+                <p class="section-description animate-on-scroll">
+                    Stay informed with real-time market indices and top performing stocks.
+                </p>
+            </div>
+            <div class="market-grid">
+                <div class="market-indices animate-on-scroll">
+                    <h3 class="market-subtitle">Market Indices</h3>
+                    <div class="indices-list">
+                        <div class="index-card">
+                            <div class="index-header">
+                                <span class="index-name">NEPSE</span>
+                                <span class="index-trend positive">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 15l-6-6-6 6"/>
+                                    </svg>
+                                    +2.34%
+                                </span>
+                            </div>
+                            <div class="index-value">2,458.67</div>
+                            <div class="index-change">+56.20 pts</div>
+                        </div>
+                        <div class="index-card">
+                            <div class="index-header">
+                                <span class="index-name">Sensitive</span>
+                                <span class="index-trend positive">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M18 15l-6-6-6 6"/>
+                                    </svg>
+                                    +1.89%
+                                </span>
+                            </div>
+                            <div class="index-value">456.32</div>
+                            <div class="index-change">+8.45 pts</div>
+                        </div>
+                        <div class="index-card">
+                            <div class="index-header">
+                                <span class="index-name">Float</span>
+                                <span class="index-trend negative">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M6 9l6 6 6-6"/>
+                                    </svg>
+                                    -0.45%
+                                </span>
+                            </div>
+                            <div class="index-value">189.54</div>
+                            <div class="index-change">-0.86 pts</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="market-table animate-on-scroll">
+                    <h3 class="market-subtitle">Top Gainers</h3>
+                    <table class="stock-table">
+                        <thead>
+                            <tr>
+                                <th>Symbol</th>
+                                <th>LTP</th>
+                                <th>Change</th>
+                                <th>% Change</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>NABIL</strong></td>
+                                <td>1,245.00</td>
+                                <td class="positive">+45.00</td>
+                                <td class="positive">+3.75%</td>
+                            </tr>
+                            <tr>
+                                <td><strong>NICA</strong></td>
+                                <td>892.00</td>
+                                <td class="positive">+32.50</td>
+                                <td class="positive">+3.78%</td>
+                            </tr>
+                            <tr>
+                                <td><strong>NTC</strong></td>
+                                <td>1,580.00</td>
+                                <td class="positive">+55.00</td>
+                                <td class="positive">+3.61%</td>
+                            </tr>
+                            <tr>
+                                <td><strong>SHIVM</strong></td>
+                                <td>456.00</td>
+                                <td class="positive">+15.80</td>
+                                <td class="positive">+3.59%</td>
+                            </tr>
+                            <tr>
+                                <td><strong>GBIME</strong></td>
+                                <td>425.00</td>
+                                <td class="positive">+14.20</td>
+                                <td class="positive">+3.46%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-content">
+                <div class="features-text animate-on-scroll">
+                    <span class="section-label">Why Choose Us</span>
+                    <h2 class="section-title">Trading Made Simple & Secure</h2>
+                    <p class="section-description">
+                        Experience the difference with our state-of-the-art trading infrastructure and dedicated support team.
+                    </p>
+                    <ul class="features-list">
+                        <li class="feature-item">
+                            <span class="feature-check">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                    <path d="M5 12l5 5 9-9"/>
+                                </svg>
+                            </span>
+                            <span>SEBON & NEPSE Licensed Broker</span>
+                        </li>
+                        <li class="feature-item">
+                            <span class="feature-check">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                    <path d="M5 12l5 5 9-9"/>
+                                </svg>
+                            </span>
+                            <span>Real-time Market Data & Analytics</span>
+                        </li>
+                        <li class="feature-item">
+                            <span class="feature-check">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                    <path d="M5 12l5 5 9-9"/>
+                                </svg>
+                            </span>
+                            <span>Secure & Encrypted Transactions</span>
+                        </li>
+                        <li class="feature-item">
+                            <span class="feature-check">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                    <path d="M5 12l5 5 9-9"/>
+                                </svg>
+                            </span>
+                            <span>Dedicated Relationship Managers</span>
+                        </li>
+                        <li class="feature-item">
+                            <span class="feature-check">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                    <path d="M5 12l5 5 9-9"/>
+                                </svg>
+                            </span>
+                            <span>Mobile & Web Trading Platforms</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="features-visual animate-on-scroll">
+                    <div class="features-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?auto=format&fit=crop&w=800&q=80" alt="Professional stock trading" class="features-bg-img">
+                    </div>
+                    <div class="feature-cards">
+                        <div class="feature-card card-1">
+                            <div class="feature-card-icon">
+                                <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 4v24M4 16h24"/>
+                                    <circle cx="16" cy="16" r="12"/>
+                                </svg>
+                            </div>
+                            <span class="feature-card-title">Quick Account Opening</span>
+                            <span class="feature-card-value">Within 24 Hours</span>
+                        </div>
+                        <div class="feature-card card-2">
+                            <div class="feature-card-icon">
+                                <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="4" y="8" width="24" height="16" rx="2"/>
+                                    <path d="M4 14h24"/>
+                                </svg>
+                            </div>
+                            <span class="feature-card-title">Lowest Brokerage</span>
+                            <span class="feature-card-value">Starting 0.34%</span>
+                        </div>
+                        <div class="feature-card card-3">
+                            <div class="feature-card-icon">
+                                <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M16 4l4 8 8 1-6 5 2 8-8-4-8 4 2-8-6-5 8-1z"/>
+                                </svg>
+                            </div>
+                            <span class="feature-card-title">Customer Rating</span>
+                            <span class="feature-card-value">4.8/5 Stars</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image animate-on-scroll">
+                    <div class="about-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Nabil Bank Building - Modern Corporate Office" class="about-img">
+                    </div>
+                    <div class="about-badge">
+                        <span class="badge-years">20+</span>
+                        <span class="badge-text">Years of Excellence</span>
+                    </div>
+                </div>
+                <div class="about-text animate-on-scroll">
+                    <span class="section-label">About Us</span>
+                    <h2 class="section-title">Nepal's Trusted Stock Dealer Since 2003</h2>
+                    <p class="about-description">
+                        Nabil Stock Dealer Ltd. is a subsidiary of Nabil Bank Ltd., one of Nepal's leading commercial banks. We are licensed by the Securities Board of Nepal (SEBON) to provide comprehensive stock broking services.
+                    </p>
+                    <p class="about-description">
+                        With over two decades of experience, we have built a reputation for reliability, transparency, and customer-centric services. Our team of experienced professionals is committed to helping you achieve your investment goals.
+                    </p>
+                    <div class="about-stats">
+                        <div class="about-stat">
+                            <span class="about-stat-value">15,000+</span>
+                            <span class="about-stat-label">Active Clients</span>
+                        </div>
+                        <div class="about-stat">
+                            <span class="about-stat-value">₹50B+</span>
+                            <span class="about-stat-label">Annual Turnover</span>
+                        </div>
+                        <div class="about-stat">
+                            <span class="about-stat-value">50+</span>
+                            <span class="about-stat-label">Team Members</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Share Calculator Section -->
+    <section class="calculator" id="calculator">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label animate-on-scroll">Useful Tools</span>
+                <h2 class="section-title animate-on-scroll">Share Calculator</h2>
+                <p class="section-description animate-on-scroll">
+                    Calculate your exact buy cost or sell proceeds including broker commission, SEBON fee, DP charges, and capital gain tax.
+                </p>
+            </div>
+            <div class="calc-container animate-on-scroll">
+                <div class="calc-tabs">
+                    <button class="calc-tab active" data-tab="buy">Buy Calculator</button>
+                    <button class="calc-tab" data-tab="sell">Sell Calculator</button>
+                </div>
+                
+                <!-- Buy Calculator -->
+                <div class="calc-panel active" id="buyPanel">
+                    <div class="calc-grid">
+                        <div class="calc-input-group">
+                            <label for="buyQty">Share Quantity</label>
+                            <input type="number" id="buyQty" placeholder="e.g. 100" min="1">
+                        </div>
+                        <div class="calc-input-group">
+                            <label for="buyPrice">Purchase Price (Rs.)</label>
+                            <input type="number" id="buyPrice" placeholder="e.g. 1200" min="1">
+                        </div>
+                    </div>
+                    <div class="calc-actions">
+                        <button class="btn btn-primary" onclick="calculateBuy()">Calculate</button>
+                        <button class="btn btn-outline" onclick="clearBuyCalc()">Clear</button>
+                    </div>
+                </div>
+
+                <!-- Sell Calculator -->
+                <div class="calc-panel" id="sellPanel">
+                    <div class="calc-grid">
+                        <div class="calc-input-group">
+                            <label for="sellHolder">Seller Type</label>
+                            <select id="sellHolder">
+                                <option value="individual">Individual</option>
+                                <option value="corporate">Corporate</option>
+                            </select>
+                        </div>
+                        <div class="calc-input-group">
+                            <label for="sellPeriod">Holding Period</label>
+                            <select id="sellPeriod">
+                                <option value="short">Short Term (&lt; 365 days)</option>
+                                <option value="long">Long Term (≥ 365 days)</option>
+                            </select>
+                        </div>
+                        <div class="calc-input-group">
+                            <label for="sellQty">Share Quantity</label>
+                            <input type="number" id="sellQty" placeholder="e.g. 100" min="1">
+                        </div>
+                        <div class="calc-input-group">
+                            <label for="sellBuyPrice">Purchase Price (Rs.)</label>
+                            <input type="number" id="sellBuyPrice" placeholder="e.g. 800" min="1">
+                        </div>
+                        <div class="calc-input-group full">
+                            <label for="sellPrice">Selling Price (Rs.)</label>
+                            <input type="number" id="sellPrice" placeholder="e.g. 1200" min="1">
+                        </div>
+                    </div>
+                    <div class="calc-actions">
+                        <button class="btn btn-primary" onclick="calculateSell()">Calculate</button>
+                        <button class="btn btn-outline" onclick="clearSellCalc()">Clear</button>
+                    </div>
+                </div>
+
+                <!-- Results -->
+                <div class="calc-results" id="calcResults">
+                    <p class="calc-placeholder">Enter values above and click Calculate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1920&q=80" alt="" class="cta-bg-image" aria-hidden="true">
+        <div class="container">
+            <div class="cta-content animate-on-scroll">
+                <h2 class="cta-title">Ready to Start Your Investment Journey?</h2>
+                <p class="cta-description">
+                    Open your trading account today and get access to Nepal's stock market with expert guidance.
+                </p>
+                <div class="cta-actions">
+                    <a href="#" class="btn btn-white btn-lg">
+                        Open Free Account
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn btn-ghost-white btn-lg">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label animate-on-scroll">Get in Touch</span>
+                <h2 class="section-title animate-on-scroll">Contact Us</h2>
+                <p class="section-description animate-on-scroll">
+                    Have questions? We're here to help. Reach out to us through any of the channels below.
+                </p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info animate-on-scroll">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <h4>Visit Us</h4>
+                        <p>Nabil Bank Building, 4th Floor<br>Kamaladi, Kathmandu, Nepal</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                            </svg>
+                        </div>
+                        <h4>Call Us</h4>
+                        <p>+977-1-4444444<br>+977-1-4444445</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <path d="M22 6l-10 7L2 6"/>
+                            </svg>
+                        </div>
+                        <h4>Email Us</h4>
+                        <p>info@nabilstockdealer.com.np<br>support@nabilstockdealer.com.np</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                        </div>
+                        <h4>Business Hours</h4>
+                        <p>Sun - Fri: 10:00 AM - 3:00 PM<br>Saturday: Closed</p>
+                    </div>
+                </div>
+                <form class="contact-form animate-on-scroll">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="account">Account Opening</option>
+                            <option value="trading">Trading Support</option>
+                            <option value="ipo">IPO Services</option>
+                            <option value="general">General Inquiry</option>
+                        </select>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="How can we help you?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg full-width">
+                        Send Message
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">
+                            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="40" height="40" rx="8" fill="currentColor"/>
+                                <path d="M12 28V18L20 12L28 18V28" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 28V22H24V28" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                        <span class="logo-text">Nabil Stock</span>
+                    </a>
+                    <p class="footer-description">
+                        Your trusted partner for stock trading and investment services in Nepal. Licensed by SEBON.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z"/>
+                                <path d="M9.75 15.02l5.75-3.27-5.75-3.27v6.54z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#market">Market Data</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Stock Trading</a></li>
+                        <li><a href="#">IPO Services</a></li>
+                        <li><a href="#">Demat Account</a></li>
+                        <li><a href="#">Portfolio Advisory</a></li>
+                        <li><a href="#">Margin Trading</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Market Reports</a></li>
+                        <li><a href="#">Research</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Downloads</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nabil Stock Dealer Ltd. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Disclaimer</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Side Tools -->
+    <aside class="side-tools" id="sideTools">
+        <a class="tool-item" href="#calculator" title="Share Calculator">
+            <div class="tool-pill">
+                <div class="tool-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                        <rect x="4" y="2" width="16" height="20" rx="2"/>
+                        <rect x="7" y="5" width="10" height="4" rx="1"/>
+                        <circle cx="8.5" cy="13" r="1" fill="currentColor" stroke="none"/>
+                        <circle cx="12" cy="13" r="1" fill="currentColor" stroke="none"/>
+                        <circle cx="15.5" cy="13" r="1" fill="currentColor" stroke="none"/>
+                        <circle cx="8.5" cy="17" r="1" fill="currentColor" stroke="none"/>
+                        <circle cx="12" cy="17" r="1" fill="currentColor" stroke="none"/>
+                        <circle cx="15.5" cy="17" r="1" fill="currentColor" stroke="none"/>
+                    </svg>
+                </div>
+                <span class="tool-name">Calculator</span>
+            </div>
+        </a>
+        <a class="tool-item" href="calendar-2082.pdf" target="_blank" title="Calendar 2082">
+            <div class="tool-pill">
+                <div class="tool-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2"/>
+                        <line x1="16" y1="2" x2="16" y2="6"/>
+                        <line x1="8" y1="2" x2="8" y2="6"/>
+                        <line x1="3" y1="10" x2="21" y2="10"/>
+                        <rect x="7" y="14" width="3" height="3" rx="0.5" fill="currentColor" opacity="0.4" stroke="none"/>
+                        <rect x="14" y="14" width="3" height="3" rx="0.5" fill="currentColor" opacity="0.4" stroke="none"/>
+                    </svg>
+                </div>
+                <span class="tool-name">Calendar</span>
+            </div>
+        </a>
+        <a class="tool-item has-badge" href="notices.html" title="Notices">
+            <div class="tool-pill">
+                <div class="tool-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                        <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                    </svg>
+                    <span class="tool-badge"></span>
+                </div>
+                <span class="tool-name">Notices</span>
+            </div>
+        </a>
+        <a class="tool-item" href="demat-search.html" title="Demat Search">
+            <div class="tool-pill">
+                <div class="tool-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                        <rect x="2" y="5" width="20" height="14" rx="2"/>
+                        <line x1="2" y1="10" x2="22" y2="10"/>
+                        <line x1="6" y1="15" x2="10" y2="15"/>
+                        <circle cx="17" cy="15" r="2.5"/>
+                        <line x1="19" y1="17" x2="21" y2="19"/>
+                    </svg>
+                </div>
+                <span class="tool-name">Demat</span>
+            </div>
+        </a>
+        <a class="tool-item" href="resources/downloads.html" title="Downloads">
+            <div class="tool-pill">
+                <div class="tool-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                        <polyline points="7 10 12 15 17 10"/>
+                        <line x1="12" y1="15" x2="12" y2="3"/>
+                    </svg>
+                </div>
+                <span class="tool-name">Downloads</span>
+            </div>
+        </a>
+    </aside>
+
+    <!-- Live Chat Button -->
+    <div class="live-chat">
+        <button class="chat-btn" id="chatBtn" aria-label="Open live chat">
+            <svg class="chat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+            </svg>
+            <svg class="close-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"/>
+                <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+        </button>
+        <span class="chat-tooltip">Chat with us</span>
+        <span class="chat-badge">1</span>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
